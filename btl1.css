@@ -1,0 +1,589 @@
+@charset "utf-8";
+
+ 
+/* CSS Document
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+img,
+picture,
+svg,
+ */
+
+
+
+/*
+phần footer
+
+*/
+
+
+.foot{
+  padding-top: 1px;
+  background-color: wheat;
+   display: grid;
+   grid-template-columns: auto auto auto auto;
+  
+  }
+  
+  .left{
+   
+    color: black;
+    width: 300px;
+    height: 320px;
+   
+    
+  }
+  .mid{
+  
+    color: black;
+    width: 300px;
+    height: 320px;
+    
+    
+  }
+  .mid_content{
+   
+    color: black;
+    width: 300px;
+    height: 320px;
+  
+  }
+  .right{
+  
+  
+    color: black;
+    width: auto;
+    height: 320px;
+   
+  
+  }
+  .chu{
+  color: black;
+  text-decoration: none;
+  }
+  .dk{
+    background-color: #336699;
+  }
+  .bo{
+    width: 100px;
+  }
+  .foot ul li{
+    list-style-type: none;
+  }
+  .foot ul li:hover{
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+/*
+phần đầu
+
+
+*/
+ .header {
+  background-color: #fe0000;;
+  height: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.anh3{
+  margin-top: 10px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  width: 300px;
+}
+
+.search-bar input[type="text"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.search-bar button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-info {
+  font-size: 14px;
+  color: white;
+  font-weight: bold;
+
+}
+
+.navigation-icons {
+  display: flex;
+}
+
+.navigation-icons h3 {
+  margin-right: 20px;
+}
+
+/*menu*/
+div.logo{
+display:flex;
+gap: 900px;
+margin-left: 100px;
+}
+div.vb{
+font-weight: bold;
+margin-top: -30px;
+margin-left: 100px;
+}
+.home{
+  background-color: #0099FF;
+  height: 50px;
+  margin-bottom: 20px;
+
+  
+}
+.home ul{
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto;
+  justify-content: space-around;
+  list-style-type: none;
+}
+.home ul a{
+text-decoration: none;
+text-align: center;
+}
+.home ul li{
+  padding-top: 15px;
+  width: 150px;
+  text-align: center;
+  height: 35px;
+}
+.home ul li:hover {
+background-color: white;
+}
+ul.child{
+  background-color: yellow;
+  display: none;
+  position: absolute;
+
+}
+.dad{
+  position: relative;
+ 
+}
+ul .dad:hover .child{
+  display: block;
+}
+.dad ul{
+  position: absolute;
+  padding-right: 40px;
+  right: -40px;
+  top:50px
+
+
+}
+
+
+
+
+
+.menu{
+  border: 1px solid ;
+  width: 320px;
+  float: left;
+  
+  }
+  div.head {
+  background-color: darkslategray;
+  border-bottom: 3px solid black;
+  color: white;
+  height: 50px;
+  line-height: 50px;
+  font-weight: bold;
+  text-align: center;
+  }
+  .menu li{
+  background-color: white;
+  line-height: 65px;
+  list-style-type: none;
+  
+  }
+  .menu li a{
+  color: black;
+  text-decoration: none;
+  text-transform: capitalize;
+  }
+  .menu a:hover {
+  color: blue;
+  
+  }
+.menu-drop{
+position: relative;
+}
+.menu-drop_content{
+position: absolute;
+display: none;
+top: 10px;
+left: 281px;
+border: 1px solid black;
+}
+.menu-drop_content li{
+width: 200px;
+
+}
+.menu-drop:hover .menu-drop_content{
+display: block;
+
+}
+
+
+
+.content{
+margin-left: 350px;
+width: 1100px;
+}
+.h1{
+border-bottom: 3px solid black;
+height: 44px;
+
+}
+.h1 #h2{
+float: inline-start;
+border: 2px solid black;
+background-color: darkslategrey;
+color: white;
+height: 40px;
+line-height: 40px;
+width: 300px;
+text-align: center;
+font-weight: bold;
+
+}
+.h1 #h3{
+float: inline-end;
+line-height: 60px;
+font-size: larger; 
+}
+#h3 a{
+text-decoration: none;
+color: black;
+}
+#h3 a:hover{
+color:cadetblue;
+}
+.img{
+width: 330px;
+height: 250px;
+margin-left: 50px;
+margin-top: -40px;
+}
+/* các sản phẩm*/
+div.sp{
+display: flex;
+margin-top: 50px;
+text-align: center;
+margin-left: 10px;
+font-size: 18px;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+div.spp {
+background-color:#003366;
+color: white;
+padding: 20px;
+margin-left: 50px;
+}
+.spp a{
+text-decoration: none;
+color: white;
+}
+.tensp{
+color:blue;
+margin-left: 50px;
+}
+.gia{
+color: red;
+}
+.spp:hover{
+color:#FFFF66; 
+background-color: red;
+}
+/* phần login
+*/
+video {
+  display: block;
+  max-width: 100%;
+}
+body {
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+}
+/* style login */
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f5f5f5;
+}
+.login__container {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.login__container h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  text-align: center;
+}
+.login__container form {
+  display: flex;
+  flex-direction: column;
+}
+.login__container form label {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+.login__container form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.login__container form button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: #333;
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.login__container form button:hover {
+  background: #555;
+}
+.login__container form a {
+  text-align: center;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #333;
+}
+.login__container form a:hover {
+  color: #555;
+}
+.login__registerButton {
+  margin-top: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  color: black;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: block;
+}
+/* style signup */
+.signup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f5f5f5;
+}
+.signup__container {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.signup__container h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  text-align: center;
+}
+.signup__container form {
+  display: flex;
+  flex-direction: column;
+}
+.signup__container form label {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+.signup__container form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.signup__container form button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: #333;
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.signup__container form button:hover {
+  background: #555;
+}
+.signup__container form a {
+  text-align: center;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #333;
+}
+.signup__container form a:hover {
+  color: #555;
+}
+.signup__registerButton {
+  margin-top: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  color: black;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: block;
+}
+/*chitiet*/
+.chitietlon{
+    display: grid;
+   grid-template-columns: 320px 450px auto;
+   gap: 60px;
+ 
+}
+.BlueStone img {
+  width: 450px;
+  height: 294px;
+  padding-top: 25px;
+}
+.chitiet{
+  display: inline-block;
+  
+  height: 280px;
+}
+#giatien{
+  display: inline-block;
+background-color: red;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+.chitiet2 p{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.chitiet2 h1{
+  font-family: 15px  Arial, Helvetica, sans-serif;
+  display: inline-block;
+  width: 100%;
+  
+}
+.chitiet2 img{
+width: 60px;
+
+}
+.themvao{
+  width: 500px;
+  text-align: center;
+}
+.themvao{
+  width: 500px;
+  text-align: center;
+}
+.themvao button:hover{
+  transform: scale(1.2);
+  cursor: pointer;
+
+}
+
+.themvao button{
+  background-color: red;
+  display: inline-block;
+  width: 500px;
+  font-size: 20px;
+  border-radius: 5px;
+  height: 50px;
+}
+.mota pre{
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 38px;
+}
+.motathem{
+margin-top: 20px;
+  width: 1000px;
+text-align: center;
+  border-style: solid;
+  border-color: #0099FF;
+}
+.motathem p{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.tskt{
+  border-style: solid;
+  text-align: center;
+  margin-top: 25px;
+}
+.tskt pre{
+ font-weight: bold;
+ font-family: Arial Regular Arial Italic;
+ font-style: italic;
+ color: black;
+
+}
+.anhcuoi{
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  gap: 10px;
+}
+strong{
+  font-size: 20px;
+  color: #0099FF;
+}
+
+
+
+.search-container {
+  display: flex;
+ border-style: solid ;
+ border-color: #FFFF66;
+}
+.search-container input{
+
+width: 200px;
+padding: 10px;
+}
+.search-container button{
+  padding: 10px;
+  width: 80px;
+  background-color: #333;
+  color: white;
+}
+
+
+
