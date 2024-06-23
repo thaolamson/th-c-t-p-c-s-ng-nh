@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="/images/1Sneaker_logo2.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đồ da dụng nhà bếp</title>
+    
+    <link rel="stylesheet" href="thanhtoan.css">
+    <link rel="stylesheet" href="/fontawesome-free-6.5.1-web/css/all.min.css">
+    <link rel="stylesheet" href="tk.css">
+</head>
+<body>
+  
+    <div id="anhdau"><img src="anhdau.png" width="100%"></div>
+   <header class="header">
+        <div class="logo"><img src="logo.png" width="200" height="120" alt=""/></div>
+        <div class="search-container">
+          <input type="text" id="searchInput" placeholder="Enter keyword...">
+          <ul id="suggestions"></ul>
+          <button onclick="search()">Search</button>
+        </div>
+        <script src="tk.js"></script>
+        <div class="contact-info" >
+            TƯ VẤN BÁN HÀNG: 0981.599.399
+        </div>
+        <div class="navigation-icons">
+            <img src="giohang.png" height="50px"><h3 class="bi bi-bag-check-fill">Giỏ hàng</h3>
+            <img src="ht1.png" height="50px"><a href="liên hệ.html" style="text-decoration: none"><h3 style="color: black;">Liên Hệ</h3></a>
+          <img src="tk.png" height="50px"><a href="signup.html" style="text-decoration: none"><h3 style="color: black;">Tài khoản</h3></a>
+    </div>
+</header>
+
+  <a href="ttcsn.html" style="text-decoration: none;font-size: 30px;color: crimson;margin:10px 10%;">>> TRANG CHỦ</a>
+  <br>
+        <hr>
+        <br><br>
+        <h2 style="margin: 0px 10%; text-align: center;">THÔNG TIN THANH TOÁN</h2>
+        <br>
+    <div class="thanhtoan-container">
+        <form>
+            <div class="input-group">
+                <label for="ten">Tên * </label>
+                <input type="text" id="ten" name="ten" required>
+              </div>
+              <div class="input-group">
+                <label for="ho">Họ * </label>
+                <input type="text" id="ho" name="ho" required>
+              </div>
+          <div class="input-group">
+            <label for="ten_cong_ty">Tên công ty (tuỳ chọn) </label>
+            <input type="text" id="ten_cong_ty" name="ten_cong_ty" required>
+          </div>
+          <p>Quốc gia/Khu vực *</p>
+          <h3>Việt Nam</h3>
+          <div class="input-group">
+            <label for="dia_chi">Địa chỉ * </label>
+            <input type="text" id="dia_chi" name="dia_chi" required>
+          </div>
+          <div class="input-group">
+            <label for="ma_buu_dien">Mã bưu điện (tuỳ chọn) </label>
+            <input type="text" id="ma_buu_dien" name="ma_buu_dien" required>
+          </div>
+          <div class="input-group">
+            <label for="tinh_thanhpho">Tỉnh/Thành phố * </label>
+            <input type="text" id="tinh_thanhpho" name="tinh_thanhpho" required>
+          </div>
+          <div class="input-group">
+            <label for="so_dien_thoai">Số điện thoại * </label>
+            <input type="tel" id="so_dien_thoai" name="so_dien_thoai" required>
+          </div>
+          <div class="input-group">
+            <label for="email">Địa chỉ email * </label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <h2>THÔNG TIN BỔ SUNG</h2>
+          <div class="input-group">
+            <label for="ghi_chu_don_hang">Ghi chú đơn hàng (tuỳ chọn) </label>
+            <input type="ghi_chu_don_hang" id="ghi_chu_don_hang" name="ghi_chu_don_hang" required>
+          </div>
+</form>
+<div class="container">
+    <h4> ĐƠN HÀNG CỦA BẠN</h4>
+    <br>
+    <table>
+        <tr>
+            <th>SẢN PHẨM</th> <hr></hr>
+            <th>TẠM TÍNH</th>
+        </tr>
+        <tr>
+            <td><strong><input type="text" placeholder="Nhập tên sản phẩm muốn mua?" style="width: 200px;"></strong></td>
+            <td>500.000đ</td>
+        </tr>
+        <tr class="total">
+            <td><strong>Nhập Voucher</strong></td>
+            <td><strong><input type="text" placeholder="Nhập voucher nếu bạn có!"></strong></td>
+        </tr>
+        <tr class="total">
+            <td><strong>Tổng</strong></td>
+            <td><strong>500.000đ*Số lượng</strong></td>
+        </tr>
+    </table>
+    <br>
+    <form>
+      <div class="input-group note">
+        <input type="checkbox" id="transfer" name="tranfer">
+        <label for="tranfer">Chuyển khoản ngân hàng</label></div>
+        <div class="input-group note">
+        <input type="checkbox" id="transfer" name="tranfer">
+        <label for="tranfer">Thẻ tín dụng /ghi nợ</label>
+        </div>
+<br>
+<link rel="stylesheet" href="soluong.css">
+<div class="quantity">
+Số lượng: 
+  <input style="margin-left: 5px;"           type="number" id="quantity" min="1" value="1">
+
+</div>
+        <script src="soluong.js"></script>
+
+
+
+            <br>
+            <hr>
+            <br>
+        <div class="input-group note">    
+        <input type="checkbox" id="cash" name="cash">
+        <label for="cash">Thanh toán khi nhận hàng</label>
+      </div>
+      <br><br>
+      <button onclick="confirmOrder()" >ĐẶT HÀNG</button>
+      <br><br>
+    </form>
+</div>
+</div>
+<script>
+  window.onscroll = function() {myFunction()};
+  var nav = document.getElementById("mynav");
+  var sticky = nav.offsetTop;
+  function myFunction() 
+  {
+      if (window.pageYOffset > sticky) 
+          nav.classList.add("sticky");
+      else 
+          nav.classList.remove("sticky");
+        }
+         
+    function confirmOrder() {
+        if (confirm("Bạn có chắc chắn muốn đặt hàng không?")) {
+            alert("Đặt hàng thành công!");
+        }
+    }
+
+ 
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+.search-container {
+    position: relative;
+    width: 300px;
+  }
+  
+  #suggestions {
+    position: absolute;
+    top: 42px;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+  }
+  #suggestions li {
+    padding: 10px;
+    cursor: pointer;
+   background-color:yellow;
+   color: black;
+   text-align: center;
+ text-transform: capitalize;
+  }
+
+  #suggestions li:hover {
+    background-color: red;
+    font-weight: bold;
+    transition: transform 0.3s ease; 
+    cursor: pointer;
+  }
+  

@@ -1,0 +1,19 @@
+.quantity {
+    display: flex;
+    align-items: center;
+    width: 150px;
+  }
+
+  input[type="number"] {
+    width: 70px;
+    text-align: center;
+  }
+
+  .btn {
+    cursor: pointer;
+    padding: 5px 10px;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 5px;
+    margin: 0 5px;
+  }

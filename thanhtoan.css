@@ -1,0 +1,421 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    /* background-color: #f2f2f2; */
+    margin: 0;
+    padding: 0;
+}
+.header {
+    background-color: #fe0000;;
+  height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .search-bar {
+    display: flex;
+    align-items: center;
+    width: 300px;
+  }
+  .contact-info {
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
+  
+  }
+  .navigation-icons {
+    display: flex;
+  }
+  .navigation-icons h3 {
+    margin-right: 20px;
+  }
+
+.search_field{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 0.5px solid gray;
+    border-radius: 30px;
+    background-color: #fff;
+    margin: 30px 0px;
+}
+.search_field input{
+    padding: 13px 0px 13px 10px;
+    margin: 0px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border: none;
+}
+.search_field select{
+    padding: 13px 10px;
+    border: none;
+    border-right: 0.5px solid gray;
+    border-left: 0.5px solid gray;
+
+}
+.search_field a{
+    color: black;
+    padding: 11px 15px;
+}
+.cart_user label{
+    padding: 0px 20px;
+    padding-right: 5px;
+    color: black;
+}
+.cart_user label:hover {
+    color: gray;
+}
+.cart_field{
+    position: fixed;
+    right: 0%;
+    top: 0%;
+    height: 100vh;
+    left: 70%;
+    background-color: white;
+    display: none;
+    z-index: 10;
+}
+.cart_field a:hover{
+    color: blue;
+}
+.cart_icon:checked ~ .overlay{
+    display: block;
+}
+.cart_icon:checked ~ .cart_field{
+    display: block;
+}
+.cart_field h3, .cart_field a{
+    color: orangered;
+    text-align: center;
+    font-family: Arial;
+}
+.cart_field a{
+    color: white;
+    background-color: orangered;
+    padding: 10px;
+    text-decoration: none;
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    left: 0%;
+}
+
+nav div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 142px;
+    background-color: black;
+}
+.menu1{
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+.menu1 > li{
+    padding: 10px 30px;
+    text-align: center;
+    margin: 0px;
+}
+.menu1 > li:first-child{
+    padding-left: 0px;
+}
+nav a, nav label{
+    color: white;
+    text-decoration: none;
+    opacity: 0.8;
+}
+nav label{
+    white-space: nowrap;
+    border: 1px solid white;
+    border-radius: 4px;
+    padding: 10px;
+}
+nav > div > div{
+    padding: 0px;
+}
+nav img{
+    padding: 0px;
+    margin: 0px;
+}
+nav a:hover, label:hover{
+    opacity: 1;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.overlay{
+    position: fixed;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    left: 0%;
+    background-color: rgb(0, 0, 0, 0.4);
+    display: none;
+}
+.img_chon_size{
+    position: fixed;
+    top: 20%;
+    right: 20%;
+    bottom: 20%;
+    left: 20%;
+    background-color: #fff;
+    display: none;
+    z-index: 10;
+}
+.img_chon_size i, .cart_field i{
+    color: black;
+    position: absolute;
+    top: 3%;
+    right: 2%;
+    margin: 0px;
+    padding: 0px;
+}
+.img_chon_size i:hover{
+    color: orangered;
+}
+.chon_size:checked ~ .overlay{
+    display: block;
+}
+.chon_size:checked ~ .img_chon_size{
+    display: block;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.thanhtoan-container {
+    padding: 0 180px;
+    display: flex;
+}
+
+.thanhtoan-container h1 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.thanhtoan-container h2 {
+    font-size: 16px;
+    margin: 25px 0 5px;
+}
+
+    
+.input-group {
+    margin-bottom: 15px;
+}
+
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: .9em;
+    font-weight: bolder;
+}
+
+.input-group input {
+    width: 600px;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 3px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 5px;
+    border: 1px solid #ccc;
+    width: 400px;
+}
+
+h4 {
+    text-align: left;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.total {
+    background-color: #e6f7ff;
+}
+.input-group input[type="checkbox"] {
+    display: inline-block;
+    width: 14px;
+}
+
+.note {
+    display: flex;
+    gap: 8px;
+}
+
+.note label {
+    margin-bottom: -25px;
+    display: inline-block;
+}
+
+button {
+    background-color: #000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+button:hover {
+    background-color: red;
+    color: #000;
+    border: 1px solid #000;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+    margin-top: 10px;
+    display: block;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer{
+    background-color: rgb(224, 221, 221);
+    margin: 20px 0px 0px 0px;
+    padding: 0px;
+}
+
+.one_exten{
+    display: flex;
+    align-items: start;
+    margin: 0px;
+    width: calc(18%);
+}
+.one_exten h4{
+    padding: 0px;
+    margin: 0px 5px;
+}
+.one_exten p{
+    padding: 0px;
+    margin: 5px;
+}
+.list_exten, .infor{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+    margin: 0px 10%;
+}
+
+.address{
+    width: calc(20%);
+    padding: 0px;
+}
+.address img{
+    width: calc(60%);
+    padding: 0px;
+    margin: 0px;
+}
+.address p{
+    padding: 0px;
+    margin: 10px 0px;
+    font-family: Arial;
+}
+
+.policy a, .per_info a{
+    color: black;
+    text-decoration: none;
+    font-family: Arial;
+}
+.policy a:hover, .per_info a:hover{
+    color: orangered;
+}
+
+.policy > h4, .per_info > h4, .shipping > h4{
+    padding: 3px 0px;
+    margin: 10px 0px;
+    font-weight: bold;
+    font-family: Arial;
+}
+.shipping img{
+    display: flex;
+    width: 25%;
+    padding: 0px;
+    margin: 0px auto;
+}
+.contact{
+    font-family: Arial;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(7, 103, 186);
+    color: white;
+    position: fixed;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    margin: 0px;
+}
+.contact > p{
+    border-right: 1px solid white;
+    width: calc(33%);
+    text-align: center;
+    margin: 0px;
+    padding: 10px;
+}
+.contact > p:last-child{
+    border-right: none;
+}
+
+
+
+
+
+
+
+/*moithem*/
+.search-container {
+    display: flex;
+   border-style: solid ;
+   border-color: #FFFF66;
+  }
+  .search-container input{
+  
+  width: 200px;
+  padding: 10px;
+  }
+  .search-container button{
+    padding: 10px;
+    width: 80px;
+    background-color: #333;
+    color: white;
+  }
+  

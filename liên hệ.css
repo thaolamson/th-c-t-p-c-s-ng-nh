@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    /* Style cho phần header */
+  }
+  
+  
+  
+  section.lien-he {
+    text-align: center;
+    background-color:#ccc;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .thong-tin-lien-he {
+    margin-bottom: 20px;
+  }
+  
+  .thong-tin-lien-he p {
+    margin-bottom: 5px;
+  }
+  
+  .form-lien-he {
+    width: 500px;
+    margin: 0 auto;
+  }
+  
+  .form-lien-he label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-lien-he input,
+  .form-lien-he textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+  }
+  
+  .form-lien-he button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  footer {
+    /* Style cho phần footer */
+  }
+
+  .lienhe{
+      text-align: center;
+      text-align: center;
+  }
